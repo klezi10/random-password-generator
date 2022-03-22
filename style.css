@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    border: 2px solid magenta;
+    background: #1F2937;
+    max-width: 550px;
+    width: 100%;
+    display: block;
+    margin: 100px auto;
+    padding: 118px 0 52px 40px;
+    
+}
+
+.title {
+    color: #4ADF86;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin-bottom: 10px;
+    width: 354px;
+}
+
+.title .title-white {
+    color: #fff;
+}
+
+.title-subheading {
+    margin: 0;
+    color: #D5D4D8;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 1.4;
+}
