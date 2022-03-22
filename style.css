@@ -42,3 +42,8 @@ body {
     font-size: 20px;
     line-height: 1.4;
 }
+
+.icon {
+    width: 20px;
+    background-color: #fff;
+}
