@@ -41,17 +41,20 @@ function getRandomChars() {
 
         newArray.push(result)
        
-        console.log(newArray)
+        // console.log(newArray)
         displayFourPasswords(newArray)
     }
 // }
 
 function displayFourPasswords(newArray) {
-    // console.log(newArray)
-    let displayPassHTML = `
+    console.log(newArray)
+    newArray.forEach(element => {
+        console.log(element)
+
+        let displayPassHTML = `
     <div class="flex-1">
-            <p class="passwords">${newArray}</p>
-                <p class="passwords">${newArray}</p>
+            <p class="passwords">${element}</p>
+                <p class="passwords">${element}</p>
             </div>
             <div class="flex-2">
                 <p class="passwords">${newArray}</p>
@@ -65,4 +68,6 @@ function displayFourPasswords(newArray) {
     `
     containerBottom.innerHTML = displayPassHTML;
     // console.log(displayPassHTML)
+    });
+    
 }
