@@ -3,8 +3,9 @@
 
 const chars = `~!@$%^&()_+-=qwertyuiopQWERTYUIOPasdfghjklASDFGHJKLzxcvbnmZXCVBNM<>?`.split('')
 
-const displayPasswords = document.querySelector('.passwords')
-console.log(displayPasswords)
+const displayPasswords = document.querySelectorAll('.passwords')
+const containerBottom = document.querySelector('.container-bottom')
+// console.log(displayPasswords)
 
 const btn = document.getElementById('generate-btn')
 btn.addEventListener("click", (event) => {
@@ -27,13 +28,41 @@ function randomElement(array) {
 }
 
 function getRandomChars() {
-    result = ''
+    let result = ''
     for (let i = 0; i < 8; i++) {
         result += randomElement(chars)
     }
-    displayFourPasswords(result)
-}
+    // console.log(result)
+    // displayFourPasswords(result)
+    // for (let i = 0; i < displayPasswords.length; i++) {
+        // console.log(displayPasswords[i])
+        let newArray = []
 
-function displayFourPasswords(result) {
-    displayPasswords.textContent = result
+
+        newArray.push(result)
+       
+        console.log(newArray)
+        displayFourPasswords(newArray)
+    }
+// }
+
+function displayFourPasswords(newArray) {
+    // console.log(newArray)
+    let displayPassHTML = `
+    <div class="flex-1">
+            <p class="passwords">${newArray}</p>
+                <p class="passwords">${newArray}</p>
+            </div>
+            <div class="flex-2">
+                <p class="passwords">${newArray}</p>
+                <p class="passwords">${newArray}</p>
+                </div>
+            `
+        // }
+    // });
+    displayPassHTML += `
+    </div>
+    `
+    containerBottom.innerHTML = displayPassHTML;
+    // console.log(displayPassHTML)
 }
