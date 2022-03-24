@@ -3,13 +3,16 @@
 
 const chars = `~!@$%^&()_+-=qwertyuiopQWERTYUIOPasdfghjklASDFGHJKLzxcvbnmZXCVBNM<>?`.split('')
 
+const displayPasswords = document.querySelector('.passwords')
+console.log(displayPasswords)
+
 const btn = document.getElementById('generate-btn')
 btn.addEventListener("click", (event) => {
     event.preventDefault()
     getRandomChars()
-    // getRandomChars()
-    // getRandomChars()
-    // getRandomChars()
+    getRandomChars()
+    getRandomChars()
+    getRandomChars()
 })
 
 // function getRandomChars() {
@@ -28,5 +31,9 @@ function getRandomChars() {
     for (let i = 0; i < 8; i++) {
         result += randomElement(chars)
     }
-    console.log(result)
+    displayFourPasswords(result)
+}
+
+function displayFourPasswords(result) {
+    displayPasswords.textContent = result
 }
