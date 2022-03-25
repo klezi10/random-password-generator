@@ -64,11 +64,6 @@ body {
     border-radius: 6px;
 }
 
-.container-bottom {
-    display: flex;
-    flex-direction: column;
-}
-
 hr {
     margin-bottom: 35px;
     border: none;
@@ -76,10 +71,10 @@ hr {
 }
 
 .container-bottom {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
                 
 }
 

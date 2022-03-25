@@ -31,10 +31,8 @@ function getRandomChars() {
 
 function displayFourPasswords() {
     let displayPassHTML = ""
-    console.log(newArray)
     newArray.forEach(function(element, index) {
         if (index < 4) {
-console.log(element)
        displayPassHTML += `
             <p class="passwords">${element}</p>
             `;
