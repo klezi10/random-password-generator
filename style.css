@@ -98,10 +98,9 @@ hr {
 }
 
 .three-dot {
-    color: #202B3C;
-    width: 20px;
-    height: 5px;
-    transform: translateY(-30%);
+    background-image: url(/three-dot-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 footer {
