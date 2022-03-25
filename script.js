@@ -4,12 +4,6 @@ let updatedPasswordList = []
 const displayPasswords = document.querySelectorAll('.passwords')
 const containerBottom = document.querySelector('.container-bottom')
 
-for (i = 0; i < 4; i++) {
-    containerBottom.innerHTML += `
-<input type="text" value="" class="passwords" readonly>
-`
-}
-
 const btn = document.getElementById('generate-btn')
 btn.addEventListener("click", (event) => {
     event.preventDefault()
