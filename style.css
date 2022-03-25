@@ -75,10 +75,18 @@ hr {
     border-bottom: 1px solid #2F3E53;
 }
 
-.flex-1,
+/* .flex-1,
 .flex-2 {
     display: flex;
     justify-content: space-between;
+} */
+
+.container-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+                
 }
 
 .passwords {
