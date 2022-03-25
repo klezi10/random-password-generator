@@ -35,6 +35,8 @@ Users should be able to:
 - CSS Grid
 - Vanilla JavaScript
 
+UI design provided by Scrimba.
+
 ### What I learned
 
 I learned how to pull four different arrays into one and how to display four different array items in the DOM. I also learned how to set up 1-click copy to clipboard.
