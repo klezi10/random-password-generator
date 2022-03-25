@@ -98,3 +98,12 @@ hr {
     height: 5px;
     transform: translateY(-30%);
 }
+
+footer {
+    text-align: center;
+    color: #4ADF86;
+}
+
+a {
+    color: #0eec67;
+}
