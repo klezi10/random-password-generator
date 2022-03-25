@@ -1,5 +1,5 @@
 const chars = `~!@$%^&()_+-=qwertyuiopQWERTYUIOPasdfghjklASDFGHJKLzxcvbnmZXCVBNM?`
-let newArray = []
+let updatedPasswordList = []
 
 const displayPasswords = document.querySelectorAll('.passwords')
 const containerBottom = document.querySelector('.container-bottom')
@@ -25,18 +25,31 @@ function getRandomChars() {
         thirdResult += randomElement(chars)
         fourthResult += randomElement(chars)
     }
-        newArray.unshift(firstResult, secondResult, thirdResult, fourthResult)
+    updatedPasswordList.unshift(firstResult, secondResult, thirdResult, fourthResult)
         displayFourPasswords()
     }
 
 function displayFourPasswords() {
     let displayPassHTML = ""
-    newArray.forEach(function(element, index) {
+    updatedPasswordList.forEach(function(element, index) {
         if (index < 4) {
        displayPassHTML += `
-            <p class="passwords">${element}</p>
+            <input type="text" value="${element}" class="passwords" readonly>
             `;
         }
     });
     containerBottom.innerHTML = displayPassHTML;
+    copyPassword()
 }
+
+function copyPassword() {
+    let inputs = document.querySelectorAll('.passwords')
+    for (const input of inputs) {
+        input.addEventListener("click", (event) => {
+            let copyText = event.target.value
+            navigator.clipboard.writeText(copyText)
+            alert('Password copied to clipboard')
+        })
+    }
+}
+
