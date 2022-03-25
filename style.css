@@ -92,6 +92,10 @@ hr {
     padding: 4px 15px;
 }
 
+.passwords:hover {
+    cursor: auto;
+}
+
 .three-dot {
     color: #202B3C;
     width: 20px;
