@@ -78,7 +78,8 @@ hr {
                 
 }
 
-.passwords {
+input {
+    width: 100%;
     background: #273549;
     border: none;
     border-radius: 6px;
@@ -92,7 +93,7 @@ hr {
     padding: 4px 15px;
 }
 
-.passwords:hover {
+input:hover {
     cursor: auto;
     border: 1px solid #D5D4D8;
 }
@@ -110,4 +111,16 @@ footer {
 
 a {
     color: #0eec67;
+}
+
+@media (max-width: 450px) {
+    input {
+        width: 100%;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .container {
+        padding-top: 80px;
+    }
 }
