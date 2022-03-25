@@ -93,8 +93,8 @@ input {
     padding: 4px 15px;
 }
 
-input:hover {
-    cursor: auto;
+.passwords:hover {
+    cursor: copy;
     border: 1px solid #D5D4D8;
 }
 

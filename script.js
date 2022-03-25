@@ -34,7 +34,7 @@ function displayFourPasswords() {
     updatedPasswordList.forEach(function(element, index) {
         if (index < 4) {
        displayPassHTML += `
-            <input type="text" value="${element}" class="passwords" title="Copy to clipboard" readonly>
+            <input type="text" value="${element}" class="passwords" title="copy to clipboard" readonly>
             `;
         }
     });
