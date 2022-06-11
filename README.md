@@ -35,7 +35,7 @@ Users should be able to:
 - CSS Grid
 - Vanilla JavaScript
 
-UI design provided by Scrimba.
+Coded from the Figma design provided by Scrimba.
 
 ### What I learned
 
