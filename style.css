@@ -119,8 +119,12 @@ a {
     }
     .title {
         font-size: 30px;
+        max-width: 100%;
     }
     .container {
         padding-top: 80px;
+    }
+    .generate-btn {
+        text-align: center;
     }
 }
