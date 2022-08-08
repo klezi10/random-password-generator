@@ -1,130 +1,164 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: black;
-    color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .container {
-    background: #1F2937;
-    max-width: 550px;
-    width: 100%;
-    display: block;
-    margin: 10px auto;
-    padding: 118px 40px 46px 40px;
-    
+  background: #1f2937;
+  max-width: 550px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  padding: 50px 40px 46px 40px;
+  border-radius: 4px;
 }
 
 .title {
-    color: #4ADF86;
-    font-family: 'Karla', sans-serif;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -0.025em;
-    margin-bottom: 10px;
-    width: 354px;
+  color: #4adf86;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+  width: 354px;
 }
 
 .title .title-white {
-    color: #fff;
+  color: #fff;
 }
 
 .title-subheading {
-    margin: 0;
-    color: #D5D4D8;
-    font-weight: 400px;
-    font-size: 20px;
-    line-height: 1.4;
+  margin: 0;
+  color: #d5d4d8;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
-.icon {
+.passwordLengthForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#passwordLength {
+  margin-bottom: 0;
+}
+
+.smaller {
+  font-size: 10px;
+  margin-top: 0.5em;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* .icon {
     width: 14px;
     height: 18px;
     margin-right: 12px;
-    transform: translateY(20%);
-}
+} */
 
 .generate-btn {
-    background: #10B981;
-    display: inline-block;
-    padding: 9px 15px;
-    margin-top: 50px;
-    margin-bottom: 35px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
+  background: #10b981;
+  display: inline-block;
+  padding: 9px 15px;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.generate-btn:hover {
+    cursor: pointer;
 }
 
 hr {
-    margin-bottom: 35px;
-    border: none;
-    border-bottom: 1px solid #2F3E53;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 1px solid #2f3e53;
 }
 
 .container-bottom {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    grid-row-gap: 10px;
-    grid-column-gap: 15px;
-                
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
 }
 
 input {
-    width: 100%;
-    background: #273549;
-    border: none;
-    border-radius: 6px;
-    width: 211px;
-    color: #55F991;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 2;
-    text-align: center;
-    margin-bottom: 27px;
-    padding: 4px 15px;
+  width: 100%;
+  background: #273549;
+  border: none;
+  border-radius: 6px;
+  width: 211px;
+  color: #55f991;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 27px;
+  padding: 4px 15px;
 }
 
 .passwords:hover {
-    cursor: copy;
-    border: 1px solid #D5D4D8;
+  cursor: copy;
+  border: 1px solid #d5d4d8;
 }
 
 .three-dot {
-    background-image: url(/images/three-dot-icon.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/images/three-dot-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 footer {
-    text-align: center;
-    color: #4ADF86;
+  text-align: center;
+  color: #4adf86;
 }
 
 a {
-    color: #0eec67;
+  color: #7171f4;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media (max-width: 450px) {
-    input {
-        width: 100%;
-    }
-    .title {
-        font-size: 30px;
-        max-width: 100%;
-    }
-    .container {
-        padding-top: 80px;
-    }
-    .generate-btn {
-        text-align: center;
-    }
+  input {
+    width: 100%;
+  }
+  .title {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .container {
+    padding-top: 80px;
+  }
+  .generate-btn {
+    text-align: center;
+  }
 }
