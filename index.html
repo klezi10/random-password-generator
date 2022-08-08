@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Generates four passwords at a time. Ability to 1-click password copy to clipboard. Built with vanilla JavaScript, CSS Grid. Responsive." />
+    <meta
+      name="description"
+      content="Generates four passwords at a time. Ability to 1-click password copy to clipboard. Built with vanilla JavaScript, CSS Grid. Responsive."
+    />
     <meta name="author" content="Klesta Luli" />
     <title>Random Password Generator</title>
 
@@ -50,13 +53,27 @@
           <span class="title-white"> Generate a </span>random password
         </h1>
         <p class="title-subheading">Never use an insecure password again.</p>
-        <a href="/" class="generate-btn" id="generate-btn"
-          ><img
+        <br />
+        <form class="passwordLengthForm">
+          <label for="passwordLength"
+            >Choose desired password length:</label>
+            <input
+              id="passwordLength"
+              name="passwordLength"
+              type="number"
+              min="8"
+              max="18"
+              value="8"
+          />
+          <p class="smaller">Valid between 8 and 18 characters.</p>
+        <br />
+        <input type="submit" value="Generate passwords" class="generate-btn" id="generate-btn" >
+          <!-- <img
             src="/images/Icon.png"
             alt="generate password icon"
             class="icon"
-          />Generate passwords</a
-        >
+          /> -->
+      </form>
         <hr />
       </div>
       <div class="container-bottom">
