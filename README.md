@@ -20,7 +20,7 @@ Users should be able to:
 - Generate 4 random passwords at once by clicking a button
 - 1-click copy password to clipboard
 
-- Update: Added the option for the user to choose how many characters they want to generate for the passwords with restrictions between 8 and 18 characters.
+- **Update**: Added the option for the user to choose how many characters they want to generate for the passwords with restrictions between 8 and 18 characters.
 
 ### Screenshot
 
